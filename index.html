@@ -45,7 +45,7 @@
     <div class="tropical-bg text-white py-8 mb-8">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <div class="flex justify-center mb-4">
-                <svg class="palm-tree w-16 h-16" viewBox="0 0 100 100" fill="none">
+                <svg class="palm-tree w-16 h-16" viewBox="0 0 100 100" fill="none" aria-hidden="true">
                     <!-- Palm tree trunk -->
                     <rect x="47" y="60" width="6" height="35" fill="#8B4513" rx="3" />
                     <!-- Palm fronds -->
@@ -60,13 +60,13 @@
                 </svg>
             </div>
             <h1 class="text-4xl font-bold mb-2">GUEST INFORMATION FORM</h1>
-            <p class="text-xl opacity-90">VERANO STATE by chef franko</p>
+            <p class="text-xl opacity-90">VERANO STATE by Chef Franko</p>
         </div>
     </div>
 
     <!-- Form connected to your Formspree endpoint -->
     <form name="guest-info" id="guestForm" method="POST" action="https://formspree.io/f/mblajkrl"
-        class="max-w-6xl mx-auto px-6 pb-12">
+        class="max-w-6xl mx-auto px-6 pb-12" aria-label="Guest Information Form">
         <!-- Basic Information -->
         <div class="form-section rounded-lg p-6 mb-8 shadow-lg">
             <h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
@@ -83,7 +83,7 @@
                         required>
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Contact/Group Leader</label>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Contact / Group Leader</label>
                     <input type="text" name="contact_leader"
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                         required>
@@ -330,7 +330,7 @@
                 </label>
                 <label class="flex items-center">
                     <input type="checkbox" name="activities" value="mariachi" class="mr-2 text-green-600">
-                    <span>Mariachi Band-trio</span>
+                    <span>Mariachi Band - Trio</span>
                 </label>
                 <label class="flex items-center">
                     <input type="checkbox" name="activities" value="atv" class="mr-2 text-green-600">
@@ -338,7 +338,7 @@
                 </label>
                 <label class="flex items-center">
                     <input type="checkbox" name="activities" value="city_tour" class="mr-2 text-green-600">
-                    <span>Private city tour</span>
+                    <span>Private City Tour</span>
                 </label>
                 <label class="flex items-center">
                     <input type="checkbox" name="activities" value="zipline" class="mr-2 text-green-600">
@@ -562,9 +562,9 @@
 
         <!-- Submit Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button type="submit"
+            <button type="submit" aria-label="Submit form"
                 class="bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
                     </path>
@@ -572,11 +572,11 @@
                 Submit Form
             </button>
 
-            <button type="button" onclick="sendToWhatsApp()"
+            <button type="button" onclick="sendToWhatsApp()" aria-label="Send form via WhatsApp"
                 class="bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.63z" />
+                <!-- Simple chat/phone icon to represent WhatsApp; kept generic for licensing -->
+                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20 2H4a2 2 0 00-2 2v16l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2zM7.5 10.5c.4.9 1.2 1.5 2.2 1.5.2 0 .4 0 .6-.1.9-.2 1.7-.7 2.3-1.5.3-.4.3-.9 0-1.3-.3-.4-.8-.6-1.3-.6-.4 0-.8.1-1.1.4-.5.5-1.1.8-1.8.9-.4 0-.7.4-.6.8z"></path>
                 </svg>
                 Send via WhatsApp
             </button>
@@ -635,8 +635,7 @@
                 message += `• ${activities.join(', ')}\n\n`;
             }
 
-            // Provisions (Shopping List) can be added here if needed for WhatsApp message
-            // For now, it will be submitted to Netlify but not included in the WhatsApp text.
+            // Provisions (Shopping List) are submitted to Formspree via the form but are not included in the WhatsApp text by default.
 
             // Additional info
             if (formData.get('special_occasion')) {
@@ -654,10 +653,10 @@
             const encodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
 
-            window.open(whatsappUrl, '_blank');
+            // Open WhatsApp in a new tab/window
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
         }
     </script>
 </body>
-
 
 </html>
